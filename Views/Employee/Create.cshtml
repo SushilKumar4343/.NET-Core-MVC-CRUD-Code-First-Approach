@@ -1,0 +1,39 @@
+﻿@model MVC_CORE_tu.Models.Employee
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center text-primary">Add Employee</h1>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="Create">
+                        <div class="form-check">
+                            <label asp-for="Name">Name</label>
+                            <input type="text" asp-for="Name" class="form-control" placeholder="Enter employee name" />
+                        </div>
+                        <div class="form-check">
+                            <label asp-for="Gender">Gender</label>
+                            <input type="text" asp-for="Gender" class="form-control" placeholder="Enter employee gender" />
+                        </div>
+                        <div class="form-check">
+                            <label asp-for="Email">Email</label>
+                            <input type="text" asp-for="Email" class="form-control" placeholder="Enter employee email" />
+                        </div>
+                        <div class="form-check">
+                            <label asp-for="Country">Country</label>
+                            <input type="text" asp-for="Country" class="form-control" placeholder="Enter employee country" />
+                        </div>
+                        <div class="form-check">
+                            <input type="submit" class="btn btn-sm btn-outline-success float-end m-1" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
